@@ -1,0 +1,131 @@
+body{
+     background: #eef2f7;
+}
+
+/* HEADER */
+h1{
+    text-align: center;
+    margin: 10px;
+}
+
+.barra.nav{
+    background: #1e1e2f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #00c3ff;
+}
+
+/* BUSCADOR */
+.busqueda input{
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+}
+
+.banner h2{
+    color: white;
+    background: rgba(0,0,0,0.5);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* GRID */
+.grid{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* TARJETAS */
+.card-ubicacion,
+.card-joyas,
+.card-cafe,
+.card-historia{
+    width: 300px;
+    height: 270px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 15px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.card-ubicacion:hover,
+.card-joyas:hover,
+.card-cafe:hover,
+.card-historia:hover{
+    transform: scale(1.05);
+}
+
+/* cuadros */
+.card-ubicacion{
+    background-image: url("caption.jpg");
+}
+
+.card-joyas{
+    background-image: url("cerro.jpg");
+}
+
+.card-cafe{
+    background-image: url("cafes.jpg");
+}
+
+.card-historia{
+    background-image:url("nocturno.jpg");
+}
+
+/* FOOTER */
+footer{
+    background: transparent;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+/* BOTÓN  */
+.card-ubicacion button,
+.card-joyas button,
+.card-cafe button,
+.card-historia button{
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    background: #00c3ff;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.card-ubicacion button:hover,
+.card-joyas button:hover,
+.card-cafe button:hover,
+.card-historia button:hover{
+    background: #0099cc;
+    transform: scale(1.05);
+}
